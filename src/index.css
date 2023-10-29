@@ -11,3 +11,126 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container{
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
+  min-width: 90vw;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1{
+  font-family: Georgia ;
+  color:#20948b;
+}
+
+.dark-mode{
+  background-color: black;
+}
+
+.mode{
+  color:#9817d8;
+  cursor: pointer;
+}
+
+.dark-mode h1{
+  color:white;
+}
+
+.notes-list{
+  display: grid;
+  grid-gap:1rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+
+.note.new{
+  background-color: #07575b;
+
+}
+
+textarea{
+  border:none;
+  resize: none;
+  background-color: #07575b;
+  color:whitesmoke;
+}
+
+textarea:focus{
+  outline: none;
+}
+
+.save{
+  background-color: #8ff4ec;
+  border:none;
+  border-radius: 10px;
+  padding:5px 10px 5px 10px;
+}
+
+.save:hover{
+  background-color: #ededed;
+  cursor: pointer;
+}
+
+.note{
+  background-color: #66a5ad;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding:1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+
+.delete-icon:hover{
+  color: red;
+  cursor: pointer;
+}
+
+.edit-icon{
+  margin-right: 1em;
+}
+
+.edit-icon:hover{
+  color:blue;
+  cursor: pointer;
+  
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  background-color: #ededed;
+  border-radius: 10px;
+  padding:8px;
+  margin-bottom: 1.5em;
+}
+
+
+
+.search input{
+  border:none;
+  background-color: #ededed;
+  margin-left:2px;
+}
+
+.search input:focus{
+  outline: none;
+}
+
+.note-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
